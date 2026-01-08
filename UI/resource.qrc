@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="Black_Icon">
+    <file>Icons/Black/iconmonstr-gear-thin-240.png</file>
+    <file>Icons/Black/iconmonstr-building-46-240.png</file>
+    <file>Icons/Black/iconmonstr-construction-10-240.png</file>
+    <file>Icons/Black/iconmonstr-inbox-9-240.png</file>
+    <file>Icons/Black/iconmonstr-inbox-thin-240.png</file>
+    <file>Icons/Black/iconmonstr-menu-1-240.png</file>
+    <file>Icons/Black/iconmonstr-sound-wave-2-240.png</file>
+    <file>Icons/Black/iconmonstr-weather-64-240.png</file>
+    <file>Icons/Black/iconmonstr-weather-97-240.png</file>
+  </qresource>
+  <qresource prefix="picture">
+    <file>Icons/Picture/stair.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>Icons/logo/DY-S.png</file>
+  </qresource>
+  <qresource prefix="White_Icon">
+    <file>Icons/white/iconmonstr-construction-10-240.png</file>
+    <file>Icons/white/iconmonstr-gear-thin-240.png</file>
+    <file>Icons/white/iconmonstr-inbox-17-240.png</file>
+    <file>Icons/white/iconmonstr-menu-1-240 (1).png</file>
+    <file>Icons/white/iconmonstr-sound-wave-8-240.png</file>
+    <file>Icons/white/iconmonstr-weather-64-240.png</file>
+  </qresource>
+  <qresource prefix="Colored_Icon">
+    <file>Icons/Colored/iconmonstr-construction-10-240 (1).png</file>
+    <file>Icons/Colored/iconmonstr-inbox-9-240 (1).png</file>
+    <file>Icons/Colored/iconmonstr-menu-1-240 (1).png</file>
+    <file>Icons/Colored/iconmonstr-sound-wave-2-240 (1).png</file>
+    <file>Icons/Colored/iconmonstr-weather-64-240 (1).png</file>
+    <file>Icons/Colored/iconmonstr-weather-97-240 (1).png</file>
+  </qresource>
+</RCC>
