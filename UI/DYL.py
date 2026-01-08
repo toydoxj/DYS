@@ -2299,7 +2299,19 @@ class Page_WL(QtWidgets.QWidget):
     # 위도 경도 불러오기     
     def getLoc(self,addr):    
         try:
-            gmaps = googlemaps.Client(key='REMOVED_API_KEY')  
+            # API 키는 환경 변수에서 로드 (보안)
+            import os
+            api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+            if not api_key:
+                QtWidgets.QMessageBox.warning(
+                    self, 
+                    'API 키 없음', 
+                    'Google Maps API 키가 설정되지 않았습니다.\n'
+                    '환경 변수 GOOGLE_MAPS_API_KEY를 설정하거나\n'
+                    'config/api_key.txt 파일에 API 키를 저장하세요.'
+                )
+                return 0, 0
+            gmaps = googlemaps.Client(key=api_key)  
             geocode_result = gmaps.geocode(addr)   
 
             if geocode_result:

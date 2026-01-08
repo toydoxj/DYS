@@ -15,10 +15,27 @@ DYL은 PyQt6를 사용한 구조 설계 애플리케이션입니다.
 
 - Python 3.11+
 - PyQt6
+- PyQt6-WebEngine (지도 기능 사용 시 필요)
 - pandas
 - folium
-- googlemaps
+- googlemaps (선택적, 지오코딩 기능 사용 시)
 - 기타 의존성 패키지
+
+### Google Maps API 설정 (선택적)
+
+지오코딩 기능을 사용하려면 Google Maps API 키가 필요합니다.
+
+**빠른 설정:**
+```bash
+# 환경 변수로 설정
+export GOOGLE_MAPS_API_KEY="your_api_key_here"
+
+# 또는 .env 파일 사용
+cp .env.example .env
+# .env 파일 편집하여 API 키 입력
+```
+
+자세한 내용은 [README_GOOGLE_API.md](README_GOOGLE_API.md)를 참조하세요.
 
 ## 설치 방법
 
@@ -29,7 +46,17 @@ DYL은 PyQt6를 사용한 구조 설계 애플리케이션입니다.
 
 2. 필요한 패키지 설치:
 ```bash
-pip install PyQt6 pandas folium googlemaps
+pip install PyQt6 PyQt6-WebEngine pandas folium googlemaps
+```
+
+3. (선택적) Google Maps API 키 설정:
+```bash
+# 환경 변수로 설정
+export GOOGLE_MAPS_API_KEY="your_api_key_here"
+
+# 또는 .env 파일 사용
+cp .env.example .env
+# .env 파일 편집하여 API 키 입력
 ```
 
 ## 실행 방법
